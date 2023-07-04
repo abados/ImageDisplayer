@@ -2,9 +2,10 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <title>Image Search</title>
-    <!-- Add CSS stylesheets and JavaScript files here -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="script2.js" defer></script>
 </head>
 <body>
     <header>
@@ -12,13 +13,21 @@
         <div>
             <input type="text" id="searchInput" placeholder="Search images">
             <button id="searchButton">Search</button>
+            <select id="tagFilter">
+                <option value="">All Tags</option>
+                <option value="background">Background</option>
+                <option value="wallpaper">Wallpaper</option>
+                <option value="nature">Nature</option>
+            </select>
         </div>
     </header>
 
     <main id="imageContainer">
         <!-- Image cards will be dynamically added here -->
     </main>
+
     <button id="moreImagesButton">More Images</button>
+
     <!-- Modal HTML structure -->
     <div id="modal" class="modal">
         <div class="modal-content">
@@ -26,8 +35,5 @@
             <!-- Modal content will be dynamically added here -->
         </div>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
-
