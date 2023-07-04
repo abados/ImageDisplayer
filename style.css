@@ -66,9 +66,9 @@ body, h1, button {
     transition: transform 0.3s ease-in-out;
   }
   
-  /* .image-card:hover img {
+   .image-card:hover img {
     transform: scale(1.1);
-  } */
+  } 
   
   /* Style the modal */
   .modal {
